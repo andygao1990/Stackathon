@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWrXsNiAydW5ELrf6sfPFMqED9EYQfLT8&libraries=places"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwmYGDykFn_kKIAXeZMRpbQfqNIZazCIE&libraries=places"></script>
     <script defer src='script.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -26,17 +27,26 @@
             </div>
             <div class="detail-section">
                 <div class="detail">
-                    <div class="title">Wind Speed: </div>
+                    <div class="title">Wind Speed</div>
                     <div class="value" data-wind ></div>
                 </div>
                 <div class="detail">
-                    <div class="title">Temperature: </div>
+                    <div class="title">Temperature</div>
                     <div class="value" data-temperature ></div>
                 </div>
                 <div class="detail">
-                    <div class="title">Humidity: </div>
+                    <div class="title">Humidity</div>
                     <div class="value" data-humidity ></div>
                 </div>
+            </div>
+            <div class="forecast-section">
+                <div class="forecast-detail" data-forecast-1></div> 
+                <div class="forecast-detail" data-forecast-2></div> 
+                <div class="forecast-detail" data-forecast-3></div>
+                <div class="forecast-detail" data-forecast-4></div>
+                <div class="forecast-detail" data-forecast-5></div>
+                <div class="forecast-detail" data-forecast-6></div>
+                <div class="forecast-detail" data-forecast-7></div>
             </div>
             <div class="city-search-container">
                 <input type="text" class="city-search" placeholder="Enter Location" data-city-search>

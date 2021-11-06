@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use(express.static('public'))
 
-app.post('/weather', (req, res) => {
+app.post('/', (req, res) => {
     const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${req.body.latitude}&lon=${req.body.longitude}&appid=${OPENWEATHER_API_KEY}&units=imperial`
     axios({
         url: url,
