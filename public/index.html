@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWrXsNiAydW5ELrf6sfPFMqED9EYQfLT8&libraries=places"></script>
+    <script defer src='script.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <img class="icon" src='https://openweathermap.org/img/wn/01d.png' alt='' data-icon></img>
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-information">
+                <div class="status" data-status >Enter A Location</div>
+                <div class="location" data-location >To Find The Weather</div>
+            </div>
+            <div class="detail-section">
+                <div class="detail">
+                    <div class="title">Wind Speed: </div>
+                    <div class="value" data-wind ></div>
+                </div>
+                <div class="detail">
+                    <div class="title">Temperature: </div>
+                    <div class="value" data-temperature ></div>
+                </div>
+                <div class="detail">
+                    <div class="title">Humidity: </div>
+                    <div class="value" data-humidity ></div>
+                </div>
+            </div>
+            <div class="city-search-container">
+                <input type="text" class="city-search" placeholder="Enter Location" data-city-search>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
